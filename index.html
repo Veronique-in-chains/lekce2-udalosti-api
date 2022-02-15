@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<h1>Změna tříd, události</h1>
+	<h1 onclick="zmenStyl()">Změna tříd, události</h1>
 
 	<div onmouseover="priNajetiNaCtverec()" class="zluty"></div>
 
@@ -18,6 +18,10 @@
 	<img class="obrazek" src="obrazky/kocka.jpg">
 
 	<button class="tlacitko">Čudlajs</button>
+
+  <p class="odstavec" onmouseover="zmenaWeight()" onmouseout="puvodniWeight()" style ="font-size: 16px">V elipse spí lev.</p>
+
+  <button>červený po kliknutí</button>
 
 	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
   <script src="main.js"></script>

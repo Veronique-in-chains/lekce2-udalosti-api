@@ -14,3 +14,15 @@ function priNajetiNaCtverec() {
   console.log("test" + pocitadlo);
   pocitadlo++;
 }
+
+function zmenStyl() {
+  nadpis.classList.toggle("zeleny");
+}
+
+let odstavec = document.querySelector("p.odstavec");
+function zmenaWeight() {
+  odstavec.classList.add("tucne");
+}
+function puvodniWeight() {
+  odstavec.classList.remove("tucne");
+}
