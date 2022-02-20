@@ -36,3 +36,34 @@ function zmenVelikost() {
   let currentSize = parseFloat(style);
   odstavec.style.fontSize = (currentSize + 1) + 'px';
 }
+
+function startAudio() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.play();
+  console.log("Zapínám píseň");
+}
+
+function prehraj() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.play();
+}
+
+function pauzni() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.pause();
+}
+
+function hlasitostMin() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.volume = 0;
+}
+
+function hlasitostMax() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.volume = 1;
+}
+
+function hlasitostMid() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.volume = 0.5;
+}
