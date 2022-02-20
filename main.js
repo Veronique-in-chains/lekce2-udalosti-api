@@ -26,3 +26,13 @@ function zmenaWeight() {
 function puvodniWeight() {
   odstavec.classList.remove("tucne");
 }
+
+function zmenBarvu() {
+  odstavec.classList.add("cerveny");
+}
+
+function zmenVelikost() {
+  let style = window.getComputedStyle(odstavec, null).getPropertyValue("font-size");
+  let currentSize = parseFloat(style);
+  odstavec.style.fontSize = (currentSize + 1) + 'px';
+}
