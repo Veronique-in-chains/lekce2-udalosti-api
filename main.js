@@ -67,3 +67,8 @@ function hlasitostMid() {
   let audioFile = document.getElementById("zvukovaStopa");
   audioFile.volume = 0.5;
 }
+
+function naZacatek() {
+  let audioFile = document.getElementById("zvukovaStopa");
+  audioFile.currentTime = 0;
+}
